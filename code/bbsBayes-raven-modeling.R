@@ -37,6 +37,7 @@ st_gg = ggplot(data = strata_map)+
 
 target.cells <- read_rds("input/target-latlong-blocks.rds")
 remove.cells <- read_rds("input/remove-latlong-blocks.rds")
+remove.cells <- c(remove.cells, c("33_-119", "24_-81", "47_-63", "47_-61"))
 
 #Download BBS data
 #fetch_bbs_data()
